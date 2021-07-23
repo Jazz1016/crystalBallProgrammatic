@@ -17,6 +17,7 @@
 		0DE0B41F26AA15AB00BCB033 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE0B41E26AA15AB00BCB033 /* UIViewExtension.swift */; };
 		0DE0B42826AB268C00BCB033 /* space.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 0DE0B42526AA3EDE00BCB033 /* space.mp4 */; };
 		0DE0B42A26AB2A7500BCB033 /* stars.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 0DE0B42926AB2A7000BCB033 /* stars.mp4 */; };
+		0DE0B42C26AB5D2600BCB033 /* QueuePlayerUIVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE0B42B26AB5D2600BCB033 /* QueuePlayerUIVIew.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		0DE0B41E26AA15AB00BCB033 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		0DE0B42526AA3EDE00BCB033 /* space.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = space.mp4; sourceTree = "<group>"; };
 		0DE0B42926AB2A7000BCB033 /* stars.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = stars.mp4; sourceTree = "<group>"; };
+		0DE0B42B26AB5D2600BCB033 /* QueuePlayerUIVIew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = QueuePlayerUIVIew.swift; path = ../../../../../../../../Documents/QueuePlayerUIVIew.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 			children = (
 				0DE0B42526AA3EDE00BCB033 /* space.mp4 */,
 				0DE0B41C26AA158100BCB033 /* CrystallBallViewController.swift */,
+				0DE0B42B26AB5D2600BCB033 /* QueuePlayerUIVIew.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -188,6 +191,7 @@
 				0DE0B40426AA140600BCB033 /* AppDelegate.swift in Sources */,
 				0DE0B41D26AA158100BCB033 /* CrystallBallViewController.swift in Sources */,
 				0DE0B40626AA140600BCB033 /* SceneDelegate.swift in Sources */,
+				0DE0B42C26AB5D2600BCB033 /* QueuePlayerUIVIew.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

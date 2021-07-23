@@ -22,7 +22,6 @@ class CrystalBallViewController: UIViewController {
         
         view.backgroundColor = .white
         constrainAll()
-        playVideo()
     }
     
     // MARK: - Properties
@@ -48,33 +47,12 @@ class CrystalBallViewController: UIViewController {
         return imageView
     }()
     
-    let safeAreaView: UIView = {
-        let view = UIView()
+    let safeAreaView: QueuePlayerUIView = {
+        let view = QueuePlayerUIView()
         
         return view
     }()
     
-    func playVideo(){
-        
-        guard let path = Bundle.main.path(forResource: "stars", ofType: "mp4") else {return}
-        let videoAsset = AVURLAsset(url: URL(fileURLWithPath: path))
-        let playerItem = AVPlayerItem(asset: videoAsset)
-        
-//        let player = AVPlayer(url: URL(fileURLWithPath: path))
-        let player = AVQueuePlayer(playerItem: playerItem)
-        let playerLayer = AVPlayerLayer(player: player)
-        playerLayer.frame = view.bounds
-        playerLayer.videoGravity = .resizeAspectFill
-        safeAreaView.layer.addSublayer(playerLayer)
-        player.volume = 0
-        
-        DispatchQueue.main.async {
-            let loopItem = AVPlayerItem(asset: videoAsset)
-            player.insert(loopItem, after: nil)
-            
-            player.play()
-        }
-    }
     
     func addSubviews(){
         self.view.addSubview(safeAreaView)
